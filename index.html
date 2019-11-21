@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Gregslist</title>
+</head>
+
+<body class="text-center">
+    <header class="container-fluid">
+        <div class="row h-75 bg-primary text-black">
+            <div class="col-12">
+                <h1>Greg's List</h1>
+            </div>
+            <div class="col-12">
+                <h5>"Now with jobs and houses!"</h5>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col">
+                <form onsubmit="app.JobsController.addJob(event)">
+                    <div class="form-group">
+                        <label for="jobtitle">Title</label>
+                        <input type="text" name="jobtitle" class="form-control" placeholder="jobtitle">
+                    </div>
+                    <div class="form-group">
+                        <label for="jobdescription">Job Description</label>
+                        <input type="text" name="jobdescription" class="form-control" placeholder="jobdescription">
+                    </div>
+                    <div class="form-group">
+                        <label for="jobpay">Pay</label>
+                        <input type="text" name="jobpay" class="form-control" placeholder="jobpay">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
